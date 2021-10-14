@@ -1,0 +1,154 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+
+/* GRID */
+.row {
+    /* clear: both;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 0 2vw; 
+    margin: 0 0 .75rem 0;
+}
+.small-12 {
+    /* width: 100%;*/
+    flex-basis: 100%;
+}
+
+.limited {
+    max-width: 1140px; 
+    margin: auto;
+}
+
+ul{
+    text-decoration: none;
+}
+li {
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    background-color: #4a4057;
+    flex-direction: column;
+}
+
+#logo {
+    /*float: left;*/
+    display: flex;
+    margin: 10px 20px 10px 20px;
+    
+}
+
+h1 {
+    color: ivory;
+    display: flex;
+    align-self: center;
+}
+
+button#hamburgerBtn { 
+    background: none;
+    border:none;
+    color: #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+nav {
+    background-color: rgb(238, 90, 90);
+    justify-content: flex-start;
+}
+
+nav ul {
+    margin: 0;
+    height: 50px;
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    list-style-type: none;
+    padding-top: 10px;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.navigation {
+    text-decoration: none;
+    display: flex;
+    
+}
+
+nav a {
+    display: block;
+    padding: ; 
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+nav li.active {background-color: rgba(0,0,0,0.5);}
+nav a:hover {background-color: rgba(0,0,0,0.2);}
+nav ul.open {display: block;}
+nav ul {display: none;}
+
+/* BODY */
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 25px;
+    color: #4a4057;
+}
+
+h3 {
+    font-size: 27px;
+    text-align: left;
+    color: #4a4057;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    margin-top: 0;
+    padding: 0 10%;
+    text-align: center;
+    background-color: rgb(223, 208, 208);
+}
+
+.services {
+    background-color: ivory;
+    padding: 25px
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
