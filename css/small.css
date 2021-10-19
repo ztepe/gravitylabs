@@ -123,10 +123,9 @@ h2 {
 
 h3 {
     font-size: 27px;
-    text-align: left;
     color: #4a4057;
     margin-bottom: 15px;
-    margin-left: 0;
+    
 }
 
 p {
@@ -139,14 +138,15 @@ p {
 main {
     margin-top: 0;
     padding: 0 10%;
-    text-align: center;
+    /*text-align: center;*/
     align-items: center;
-    width: 70%;
+    /*width: 70%;*/
 }
 
 .services {
     background-color: ivory;
-    padding: 25px
+    padding: 25px;
+    align-items: center;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
