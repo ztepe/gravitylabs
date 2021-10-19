@@ -3,10 +3,10 @@
     .large-3 {width: 25%;}
   
     nav ul {margin-left: 2vw;}
-    nav li {width:auto;}
+    nav li {}
     nav a {padding: .7rem 1rem;}
     
-    .large-6 {
+    .large-3 {
         width: 75%;
     }
     

@@ -7,7 +7,7 @@ body {
     font-family: 'Gemunu Libre', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    
+    background-color: rgb(107, 83, 83);
 }
 
 
@@ -54,6 +54,7 @@ header {
 }
 
 h1 {
+    font-size: em;
     color: ivory;
     display: flex;
     align-self: center;
@@ -75,8 +76,10 @@ nav {
 
 nav ul {
     margin: 0;
-    height: 50px;
+    /*padding: 0;*/
+    height: 50%;
     display: flex;
+    align-items: flex-start;
 }
 
 nav li {
@@ -90,17 +93,17 @@ nav li {
 
 .navigation {
     text-decoration: none;
-    display: flex;
+    align-items: baseline;
     
 }
 
 nav a {
-    display: block;
-    padding: ; 
+    display: inline-block;
+    padding: 20px; 
     color: #eee;
-    text-align: center;
+    justify-content: flex-start;
     text-decoration: none;
-    
+    align-items: center;
 }
 
 nav li.active {background-color: rgba(0,0,0,0.5);}
@@ -111,10 +114,11 @@ nav ul {display: none;}
 /* BODY */
 
 h2 {
-    font-size: 40px;
+    font-size: 3.2em;
     margin: 0;
     padding-top: 25px;
-    color: #4a4057;
+    color: #9f86c0;
+    text-shadow: 1px 1px #504263;
 }
 
 h3 {
@@ -136,7 +140,8 @@ main {
     margin-top: 0;
     padding: 0 10%;
     text-align: center;
-    background-color: rgb(223, 208, 208);
+    align-items: center;
+    width: 70%;
 }
 
 .services {
