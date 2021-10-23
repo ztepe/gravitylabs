@@ -23,7 +23,7 @@ body {
     margin: 0 0 .75rem 0;
 }
 .small-12 {
-    /* width: 100%;*/
+    width: 100%;
     flex-basis: 100%;
 }
 
@@ -40,6 +40,11 @@ li {
     text-decoration: none;
 }
 
+ul li { /*new css for button list*/
+    display: block;
+
+}
+
 /* HEADER */
 header {
     background-color: #4a4057;
@@ -50,7 +55,7 @@ header {
     /*float: left;*/
     display: flex;
     margin: 10px 20px 10px 20px;
-    
+    border-radius: 10px;
 }
 
 h1 {
@@ -64,11 +69,11 @@ button#hamburgerBtn {
     background: none;
     border:none;
     color: #fff;
+    width: 50px;
     font-size: 2.4rem;
     cursor: pointer;
     padding: 0 30px 0 2vw;
 }
-
 nav {
     background-color: rgb(238, 90, 90);
     justify-content: flex-start;
@@ -116,16 +121,16 @@ nav ul {display: none;}
 h2 {
     font-size: 3.2em;
     margin: 0;
-    padding-top: 25px;
     color: #9f86c0;
     text-shadow: 1px 1px #504263;
+    text-align: center;
 }
 
 h3 {
     font-size: 27px;
     color: #4a4057;
     margin-bottom: 15px;
-    
+    text-align: center;
 }
 
 p {
@@ -143,10 +148,45 @@ main {
     /*width: 70%;*/
 }
 
-.services {
+div.services {
     background-color: ivory;
     padding: 25px;
     align-items: center;
+    
+}
+
+form {
+    margin: 1rem $gutter;
+    max-width: 25rem;
+    display: block;
+    justify-content: center;
+        label {
+            display: block;
+            padding: .75rem 0;
+            span {
+                font-size: .75rem;
+                color: }
+        } /* end span */
+        input,textarea {
+            display: block;
+            font-size: 1rem;
+            padding: .75rem;
+            background-color: #f6f6f6;
+            border: 1px solid #bbb;
+            margin-top: .2rem;
+            width: 100%;
+        }
+        textarea {
+            min-height: 30rem;
+        }
+}
+
+label > span {display: none;}
+label.error > span {
+    display: block;
+    font-size: .75rem;
+    color: red;
+    padding-left: 10px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
