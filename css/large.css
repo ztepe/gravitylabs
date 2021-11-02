@@ -1,13 +1,17 @@
 @media only screen and (min-width: 1024px) {
-    
-    .large-3 {width: 25%;}
   
-    nav ul {margin-left: 2vw;}
-    nav li {}
-    nav a {padding: .7rem 1rem;}
+    nav ul {
+        margin-left: 2vw;
+        justify-content: space-between;
+    }
+    nav li {
+        width: 30%;
+    }
+    nav a {}
     
     .large-3 {
         width: 75%;
     }
+
     
 } /* end of media query */

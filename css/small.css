@@ -50,7 +50,7 @@ ul li { /*new css for button list*/
 
 /* HEADER */
 header {
-    background-color: #4a4057;
+    background-color: #3c3249;
     flex-direction: column;
 }
 
@@ -59,13 +59,15 @@ header {
     display: flex;
     margin: 10px 20px 10px 20px;
     border-radius: 10px;
+    
 }
 
 h1 {
-    font-size: em;
-    color: ivory;
+    font-size: 3em;
+    color: rgb(250, 238, 220);
     display: flex;
     align-self: center;
+    text-shadow: 2px 2px rgb(122, 51, 51);
 }
 
 button#hamburgerBtn { 
@@ -78,30 +80,32 @@ button#hamburgerBtn {
     padding: 0 30px 0 2vw;
 }
 nav {
-    background-color: rgb(238, 90, 90);
+    background-color: rgb(167, 56, 56);
     justify-content: flex-start;
 }
 
 nav ul {
     margin: 0;
     /*padding: 0;*/
-    height: 50%;
-    display: flex;
-    align-items: flex-start;
+    height: 100%;
+    display: block;
+    align-items: center;
 }
 
 nav li {
-    display: flex;
+    display: block;
     list-style-type: none;
-    padding-top: 10px;
-    align-items:center;
-    justify-content: flex-start;
+    /*padding-top: 10px;*/
+    /*align-self:center;*/
+    /*justify-content: flex-start;*/
     gap: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 .navigation {
     text-decoration: none;
-    align-items: baseline;
+    /*align-items: baseline;*/
     
 }
 
@@ -112,10 +116,13 @@ nav a {
     justify-content: flex-start;
     text-decoration: none;
     align-items: center;
+    width: 100%;
 }
 
 nav li.active {background-color: rgba(0,0,0,0.5);}
-nav a:hover {background-color: rgba(0,0,0,0.2);}
+nav a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
 nav ul.open {display: block;}
 nav ul {display: none;}
 
@@ -130,7 +137,7 @@ div.intro p {
 
 h2 {
     font-size: 3.2em;
-    margin: 0;
+    margin: 10px;
     color: #6a538a;
     text-shadow: 1px 1px ivory;
     text-align: center;
@@ -139,7 +146,6 @@ h2 {
 h3 {
     font-size: 2rem;
     color: #4a4057;
-    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -162,7 +168,7 @@ main {
 div.services {
     display: block;
     background-color: rgb(255, 235, 205, .75);
-    padding: 25px;
+    padding: 20px;
     align-items: center;
     border-radius: 10px;
     margin: 10px;
@@ -189,7 +195,7 @@ input,textarea {
             display: block;
             font-size: 1rem;
             padding: .75rem;
-            background-color: ivory;
+            background-color: #fffff0;
             border: 1px solid #bbb;
             border-radius: 5px;
             margin-top: .0rem;
@@ -199,7 +205,11 @@ textarea {
             min-height: 25rem;
         }
         
-
+input.submit {
+    background-color: rgb(167, 56, 56);
+    color: blanchedalmond;
+    font-weight: bold;
+}
 
 label > span {display: none;}
 label.error > span {
@@ -207,6 +217,10 @@ label.error > span {
     font-size: .75rem;
     color: red;
     padding-left: 10px;
+}
+
+#disclaimer {
+    display: none;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

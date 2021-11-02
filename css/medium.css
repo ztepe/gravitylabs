@@ -7,10 +7,33 @@
    .medium-6 {width: 75%;}
     
     nav button {display: none;}
-    nav ul {display: block;}
-    nav li {width: 25%; float: left;}
-    nav a {font-size: 3;}
+    nav ul {display: block;
+
+    }
+    nav li {
+        width: 25%; 
+        display: inline-block;
+        align-items: center;
+        
+    }
+    nav a {
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
     
-    
+    #primaryNav {
+        width: 100%;
+        text-align: center;
+    }
+    .navigation {
+        height: 50px;
+    }
+
+    #disclaimer {
+        display: flex;
+        color: blanchedalmond;
+        float: right;
+        width: 60%;
+    }
     
 } /* end of media query */
