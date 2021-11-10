@@ -30,10 +30,13 @@
     }
 
     #disclaimer {
-        display: flex;
+        display: block;
         color: blanchedalmond;
         float: right;
-        width: 60%;
+        max-width: 50%;
     }
     
+    .contactUs {
+        
+    }
 } /* end of media query */

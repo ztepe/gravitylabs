@@ -179,6 +179,7 @@ form { /*may need to break these out individually*/
     max-width: 25rem;
     display: block;
     justify-content: center;
+
 }
 label {
             display: block;
@@ -220,9 +221,10 @@ label.error > span {
 }
 
 #disclaimer {
-    display: none;
+        display: block;
+        color: blanchedalmond;
+        max-width: 75%;
 }
-
 /*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {

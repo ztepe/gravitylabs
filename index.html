@@ -83,35 +83,41 @@
                         </p>
                     </div>
                 </div>
-                
-<form name="myForm" class="column small-12 large-3" method="POST" action="thankYou.html" onsubmit="return validateForm()">
+    /*Java feature 1*/
+<div class="contactUs">  
+    
+<div id=disclaimer class="large-3">
+        <p>Tell us more about your business! We would love to help
+        your business grow and become the best it can be. We promise 
+        not to share your information with anyone and will only use it 
+        to get in touch.</p>
+</div>
+
+<form name="myForm" class="column small-12 large-3" method="POST" action="thankYou.html" onsubmit="return validateForm()"> 
     <label><div>Name</div><input type="text" name="name"></label>
     <label><div>Company</div><input type="text" name="company"></label>
     <label><div>Email</div>
-        <input type="email" name="name" placeholdher="janedoe@email.com">
+        <input type="email" id="fullName" placeholdher="janedoe@email.com">
         <span>Please enter valid email address</span>
     </label>
     <label><div>Phone</div>
-        <input type="tel" name="Phone">
+        <input type="tel" id="phone">
         <span>Phone number should contain 10 digits</span>
     </label>
     <label><div>Notes</div><input type="textarea"></label>
-    <input type="submit" value="Get In Touch" class="submit">
+    <input type="button" value="Get In Touch" class="submit" onclick="validateForm()">
 </form>
 
-<div id=disclaimer>
-    <p>Tell us more about your business! We would love to help
-    your business grow and become the best it can be. We promise 
-    not to share your information with anyone and will only use it 
-    to get in touch.</p>
 </div>
-
             </article>
         </main>
     </div>
      
-    <script>
+    <script> /*Java feature 2*/
         alert('Please be sure to submit your contact info for a free consultation!')
+    </script>
+    <script src="main.js">
+        
     </script>
 </body>
 </html>
