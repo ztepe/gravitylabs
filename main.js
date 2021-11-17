@@ -7,9 +7,10 @@ function validateForm() {
 
     //test for full name
     x = document.forms.myForm.name.value;
+    console.log(x);
     if (x===null || x==="") {
         status=false;
-        document.getElementById('fullName').className = "error";
+        document.getElementById('name').className = "error";
     }
     //check for the phone number
     x = document.getElementById('phone').className = "error";;
@@ -20,5 +21,9 @@ function validateForm() {
         status=false;
         document.getElementById('phone').className = "error";
     }
-    return status;
+    document.getElementById("formResponse").innerHTML=document.getElementById("email").value;
+    console.log(document.getElementById("name").value);
 }
+
+
+

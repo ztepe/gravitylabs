@@ -79,6 +79,24 @@ button#hamburgerBtn {
     cursor: pointer;
     padding: 0 30px 0 2vw;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c3249;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    font-weight: 700;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: rgba(167, 56, 56, 30%);}
+.dropdown:hover .dropdown-content {display: block;}
+
 nav {
     background-color: rgb(167, 56, 56);
     justify-content: flex-start;
@@ -86,7 +104,6 @@ nav {
 
 nav ul {
     margin: 0;
-    /*padding: 0;*/
     height: 100%;
     display: block;
     align-items: center;
@@ -95,9 +112,6 @@ nav ul {
 nav li {
     display: block;
     list-style-type: none;
-    /*padding-top: 10px;*/
-    /*align-self:center;*/
-    /*justify-content: flex-start;*/
     gap: 10px;
     height: 100%;
     width: 100%;
@@ -105,7 +119,6 @@ nav li {
 
 .navigation {
     text-decoration: none;
-    /*align-items: baseline;*/
     
 }
 
@@ -113,9 +126,8 @@ nav a {
     display: inline-block;
     padding: 20px; 
     color: #eee;
-    justify-content: flex-start;
     text-decoration: none;
-    align-items: center;
+    text-align: center;
     width: 100%;
 }
 
