@@ -1,5 +1,5 @@
 # gravitylabs
-CodeLouisville front end project
+CodeLouisville front end project by Zack Tepe
 
 Welcome to Gravity Labs! The idea for this project comes from an idea my friend and I are working on in real life. 
 I wanted to play around with how the future website could look and start brainstorming the content. 
@@ -13,10 +13,9 @@ transition to large screens, the form and form text move from vertically stacked
     
 CSS(2):
 I am using a collapsable navigation menu that dissapears on medium/large screens. I am also utilizing flexbox to organize 
-content on the page.
+content at the bottom of the page. Both items respond to the page being viewed at different sizes.
 
 JAVA(2):
-I have utilized the alert function to display a message before accessing the page that tells visitors to fill out the 
-form at the bottom of the page. My second Java fuction is the "Get in Touch" form where guests can submit contact 
-information. The function will give users an error message when they enter an invalid email or phone number.
+My primary Java function is a form that checks both for a name being entered and for phone number length between 10 and 15 digits. I have also returned the Zame entered underneath the "get in touch" button. I have also utilized the alert function to display a message before accessing the page that tells visitors to fill out the 
+form at the bottom of the page. 
     

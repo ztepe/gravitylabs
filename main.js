@@ -1,6 +1,3 @@
-/*jslint browser:true*/
-//"use strict";
-
 function validateForm() {
     var status = false;
     var x;
