@@ -18,7 +18,7 @@ function validateForm() {
         status=false;
         document.getElementById('phone').className = "error";
     }
-    document.getElementById("formResponse").innerHTML=document.getElementById("email").value;
+    document.getElementById("formResponse").innerHTML=document.getElementById("name").value;
     console.log(document.getElementById("name").value);
 }
 
